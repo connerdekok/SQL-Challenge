@@ -1,5 +1,5 @@
 --List the employee number, last name, first name, sex, and salary of each employee
-SELECT e.emp_no, first_name, last_name, hire_date, sex, salary
+SELECT e.emp_no, first_name, last_name, sex, salary
 FROM employees e
 JOIN salaries s
 ON (e.emp_no = s.emp_no);
