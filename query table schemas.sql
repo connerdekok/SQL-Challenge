@@ -14,7 +14,7 @@ dept_name VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE employees (
-emp_no INT(30) NOT NULL PRIMARY KEY,
+emp_no INT NOT NULL PRIMARY KEY,
 emp_title_id VARCHAR(30) NOT NULL,
 birth_date DATE NOT NULL,
 first_name VARCHAR(30) NOT NULL,
@@ -25,8 +25,8 @@ FOREIGN KEY(emp_title_id) REFERENCES titles(title_id)
 );
 
 CREATE TABLE salaries (
-emp_no INT(30) NOT NULL PRIMARY KEY,
-salary INT(30) NOT NULL,
+emp_no INT NOT NULL PRIMARY KEY,
+salary INT NOT NULL,
 FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
 );
 
